@@ -106,10 +106,10 @@ contract BGToken is IERC20{
         require(receiver != address(0));  
         uint256 amount= (msg.value/10**18)*1000; 
         require(balances[receiver]<= totalSupply_);
-        totalSupply_+=amount;
-        balances[receiver]+=amount;
+        totalSupply_= totalSupply_+ amount;
+        balances[receiver]= balances[receiver]+amount;
         emit BuyToken(amount);
-        return amount;
+        return totalSupply_;
     }
 
 

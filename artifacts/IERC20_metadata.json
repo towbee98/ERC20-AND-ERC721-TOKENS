@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"anonymous": false,
 				"inputs": [
 					{
@@ -82,7 +77,7 @@
 					},
 					{
 						"internalType": "address",
-						"name": "intermediary",
+						"name": "spender",
 						"type": "address"
 					}
 				],
@@ -101,7 +96,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "intermediary",
+						"name": "spender",
 						"type": "address"
 					},
 					{
@@ -125,7 +120,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "holder",
+						"name": "account",
 						"type": "address"
 					}
 				],
@@ -135,64 +130,6 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "receiver",
-						"type": "address"
-					}
-				],
-				"name": "buyToken",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "payable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "decimals",
-				"outputs": [
-					{
-						"internalType": "uint8",
-						"name": "",
-						"type": "uint8"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "name",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "symbol",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -239,7 +176,7 @@
 				"inputs": [
 					{
 						"internalType": "address",
-						"name": "owner",
+						"name": "sender",
 						"type": "address"
 					},
 					{
@@ -278,7 +215,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/BgToken.sol": "BGToken"
+			"BgToken_flat.sol": "IERC20"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -292,20 +229,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@openzeppelin/contracts/utils/math/SafeMath.sol": {
-			"keccak256": "0xa2f576be637946f767aa56601c26d717f48a0aff44f82e46f13807eea1009a21",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://973868f808e88e21a1a0a01d4839314515ee337ad096286c88e41b74dcc11fc2",
-				"dweb:/ipfs/QmfYuZxRfx2J2xdk4EXN7jKg4bUYEMTaYk9BAw9Bqn4o2Y"
-			]
-		},
-		"contracts/BgToken.sol": {
-			"keccak256": "0x1d9fbb3aeecee646e7bbc3c2ff2239e6b7aea001fed19b30474c449dbe97dc40",
+		"BgToken_flat.sol": {
+			"keccak256": "0xdb036f89e3c26d034df8b1d96ffc281ac1e4023de409c6d086aaee47b7ec512d",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cd78d7f56ace11395ca595a698a0b296517128bcab1d02710932e674256ada45",
-				"dweb:/ipfs/Qmdg9girTHz4C8hzFpXGm5RKaQWtzbeES9xCFLy9KG4LEA"
+				"bzz-raw://5431a6b6a0ed4d4ce209cbb819d58bfe69d184af386bf7270f563ffd4a92e911",
+				"dweb:/ipfs/QmbnLoMPMMYuNnRC1uuCqXXLRTbo1rAtoLEbrPYSHPzcLc"
 			]
 		}
 	},
