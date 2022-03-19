@@ -268,12 +268,13 @@ contract BGToken is IERC20{
     mapping(address=>mapping(address=>uint256)) allowed;//this holds the addresses allowed to withdraw from an address and the amount allowed
 
     uint256 totalSupply_;
+    uint256 totalSupply_cap;
     
     //store the total amount of token supplied to the address that created the contract.
     constructor (){
          creator= msg.sender;
-        totalSupply_=1000000;
-        balances[msg.sender]=totalSupply_;
+        totalSupply_cap=1000000;
+        //balances[msg.sender]=totalSupply_;
     }
 
     //this returns the total amount of token in circulation 
@@ -292,6 +293,7 @@ contract BGToken is IERC20{
         require(recipient != address(0));
         require(balances[msg.sender]>=amount,"Insufficent balance");
         require(recipient != address(0));
+        require(totalSupply_<= totalSupply_cap);
         balances[msg.sender]=balances[msg.sender].sub(amount);
         balances[recipient]=balances[recipient].add(amount);
         payable(recipient).transfer(amount);
@@ -336,8 +338,10 @@ contract BGToken is IERC20{
     //This allows an address to buy token and increase the total tokens in circulation
     function buyToken(address receiver) public payable  returns(uint256){
         require(receiver != address(0));  
+        require(totalSupply_<=totalSupply_cap);
         uint256 amount= (msg.value/10**18)*1000; 
         require(balances[receiver]<= totalSupply_);
+
         totalSupply_= totalSupply_+ amount;
         balances[receiver]= balances[receiver]+amount;
         emit BuyToken(amount);

@@ -238,11 +238,11 @@
 			]
 		},
 		"contracts/BgToken.sol": {
-			"keccak256": "0x1d9fbb3aeecee646e7bbc3c2ff2239e6b7aea001fed19b30474c449dbe97dc40",
+			"keccak256": "0x9f19fd3434a53fafa55af3ef5c2ebf7bc13c567b8fec55d7191dfae676556bec",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://cd78d7f56ace11395ca595a698a0b296517128bcab1d02710932e674256ada45",
-				"dweb:/ipfs/Qmdg9girTHz4C8hzFpXGm5RKaQWtzbeES9xCFLy9KG4LEA"
+				"bzz-raw://a89108767834afa8cf9da115888e642b81c04719a117abb5d5ca6e2e3a6ee9a7",
+				"dweb:/ipfs/QmZWDzQLXRiidtVcRJvDZNkbieKkWLGPXvVv9qU8WNM9tE"
 			]
 		}
 	},

@@ -293,11 +293,11 @@
 	},
 	"sources": {
 		"BgToken_flat.sol": {
-			"keccak256": "0xdb036f89e3c26d034df8b1d96ffc281ac1e4023de409c6d086aaee47b7ec512d",
+			"keccak256": "0x1e3d70202ae6557e26d710341cd979bdb8a5baff56fb6d8a8db758fb8060484b",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://5431a6b6a0ed4d4ce209cbb819d58bfe69d184af386bf7270f563ffd4a92e911",
-				"dweb:/ipfs/QmbnLoMPMMYuNnRC1uuCqXXLRTbo1rAtoLEbrPYSHPzcLc"
+				"bzz-raw://bffafb49d82fc4b1683489580360f8c51005c98a4215aae5a3c98f070f0f6916",
+				"dweb:/ipfs/QmcxQ3QmFgn8DzkQxRNUyDjmG28Hp8WSSuLnwQKtGzicDQ"
 			]
 		}
 	},
